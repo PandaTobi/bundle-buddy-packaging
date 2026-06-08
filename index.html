@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bundle Buddy Packaging</title>
+    <meta name="description" content="Bundle Buddy Packaging supplies wholesale bubble wrap, stretch wrap, tape, and poly bubble mailers at factory-direct pricing.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="magnify">
+        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+        <div id="img_here"></div>
+    </div>
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <td id="logo">
+                    <a href="#top_part" class="logo_link" aria-label="Bundle Buddy Packaging home">
+                        <img src="assets/bundlebuddylogo.png" alt="Bundle Buddy Packaging logo">
+                        <span>Bundle Buddy Packaging</span>
+                    </a>
+                </td>
+                <td id="navigation">
+                    <a href="#work">Products</a>
+                    <a href="#bio">About</a>
+                    <a href="#contact">Contact</a>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <table id="top_part">
+        <tr>
+            <td id="about" class="animated slideInLeft" style="animation-delay:2s;">
+                <div class="eyebrow">Industrial Packaging Supply</div>
+                <h1>Wholesale Packaging. Factory-Direct Pricing.</h1>
+                <p class="hero_copy">Bubble wrap, stretch wrap, tape, and poly bubble mailers supplied directly from our one-site manufacturing operation - helping businesses cut packaging costs without sacrificing reliability.</p>
+                <a href="#contact" class="btn_one">Request a Quote</a>
+                <div class="hero_points">
+                    <span>Factory-direct supply</span>
+                    <span>Bulk wholesale pricing</span>
+                    <span>Custom options available</span>
+                </div>
+            </td>
+            <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2.2s;">
+                <div class="hero_visual">
+                    <div class="hero_brand">
+                        <img src="assets/bundlebuddylogo.png" alt="Bundle Buddy Packaging logo">
+                    </div>
+                    <div class="hero_collage">
+                        <button class="hero_card hero_card_large" type="button" onclick="magnify('assets/stretch_film.webp')">
+                            <img src="assets/stretch_film.webp" alt="Cast stretch wrap rolls">
+                        </button>
+                        <button class="hero_card" type="button" onclick="magnify('assets/clear_tape.jpg')">
+                            <img src="assets/clear_tape.jpg" alt="Clear packaging tape">
+                        </button>
+                        <button class="hero_card" type="button" onclick="magnify('assets/small_bubble_wrap.jpg')">
+                            <img src="assets/small_bubble_wrap.jpg" alt="Bubble wrap roll">
+                        </button>
+                        <button class="hero_card" type="button" onclick="magnify('assets/polymailer.jpg')">
+                            <img src="assets/polymailer.jpg" alt="Poly bubble mailers">
+                        </button>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div id="work">
+        <h1>Products</h1>
+        <p class="section_intro">Bulk packaging products built for shipping, fulfillment, warehousing, and day-to-day business operations.</p>
+        <div id="photos" class="product_grid">
+            <article class="product_card">
+                <div class="product_image product_image_dual">
+                    <button class="product_thumb" type="button" onclick="magnify('assets/clear_tape.jpg')" aria-label="View clear packaging tape image">
+                        <img src="assets/clear_tape.jpg" alt="Clear packaging tape roll">
+                    </button>
+                    <button class="product_thumb" type="button" onclick="magnify('assets/brown_tape.jpg')" aria-label="View brown packaging tape image">
+                        <img src="assets/brown_tape.jpg" alt="Brown packaging tape roll">
+                    </button>
+                </div>
+                <div class="product_content">
+                    <h2>Packaging Tape</h2>
+                    <p>Clear and brown carton sealing tape for warehouse and shipping operations.</p>
+                    <ul>
+                        <li>Clear tape: 2 mil and 3 mil thickness</li>
+                        <li>Clear tape widths: 2", 3"</li>
+                        <li>Brown tape: 2 mil thickness</li>
+                        <li>Brown tape width: 2"</li>
+                        <li>Length: 110 yards</li>
+                    </ul>
+                    <a href="#contact" class="btn_two">Request pricing</a>
+                </div>
+            </article>
+            <article class="product_card">
+                <button class="product_image" type="button" onclick="magnify('assets/stretch_film.webp')" aria-label="View stretch wrap image">
+                    <img src="assets/stretch_film.webp" alt="Cast stretch wrap">
+                </button>
+                <div class="product_content">
+                    <h2>Cast Stretch Wrap</h2>
+                    <p>Machine and hand-use stretch film for palletizing, bundling, and warehouse protection.</p>
+                    <ul>
+                        <li>Machine rolls: 20", 30", 36" widths</li>
+                        <li>Machine rolls: customizable length</li>
+                        <li>Hand-use rolls: 18", 15", 12", 6", 4.5" widths</li>
+                        <li>Gauge: 50-120</li>
+                        <li>Custom lengths available</li>
+                    </ul>
+                    <a href="#contact" class="btn_two">Request pricing</a>
+                </div>
+            </article>
+            <article class="product_card">
+                <div class="product_image product_image_dual">
+                    <button class="product_thumb" type="button" onclick="magnify('assets/small_bubble_wrap.jpg')" aria-label="View small bubble wrap image">
+                        <img src="assets/small_bubble_wrap.jpg" alt="Small bubble wrap roll">
+                    </button>
+                    <button class="product_thumb" type="button" onclick="magnify('assets/large_bubble_wrap.jpg')" aria-label="View large bubble wrap image">
+                        <img src="assets/large_bubble_wrap.jpg" alt="Large bubble wrap roll">
+                    </button>
+                </div>
+                <div class="product_content">
+                    <h2>Bubble Wrap</h2>
+                    <p>Small and large bubble cushioning wrap manufactured for bulk industrial packaging needs.</p>
+                    <ul>
+                        <li>Small bubbles available</li>
+                        <li>Large bubbles available</li>
+                        <li>Standard widths: 12", 24", 36", 48"</li>
+                        <li>Custom widths available from 6" to 48"</li>
+                        <li>Custom roll lengths available</li>
+                    </ul>
+                    <a href="#contact" class="btn_two">Request pricing</a>
+                </div>
+            </article>
+            <article class="product_card">
+                <button class="product_image" type="button" onclick="magnify('assets/polymailer.jpg')" aria-label="View poly bubble mailers image">
+                    <img src="assets/polymailer.jpg" alt="Poly bubble mailers">
+                </button>
+                <div class="product_content">
+                    <h2>Poly Bubble Mailers</h2>
+                    <p>Lightweight protective mailers for ecommerce, fulfillment, and shipping operations.</p>
+                    <ul>
+                        <li>26 x 36 cm</li>
+                        <li>32 x 46 cm</li>
+                        <li>Bulk wholesale supply</li>
+                    </ul>
+                    <a href="#contact" class="btn_two">Request pricing</a>
+                </div>
+            </article>
+        </div>
+    </div>
+    <div id="bio">
+        <h1>About</h1>
+        <p>Bundle Buddy Packaging helps businesses lower packaging costs with dependable, factory-direct supply. Because we manufacture and source directly, our customers avoid unnecessary middlemen and get practical wholesale pricing on the products they use every day.</p>
+        <p>We put customers first: we listen to your needs, help match the right product and specification, and work with you on delivery options and negotiable rates whenever possible. Whether you need standard packaging supplies or customized sizes, our goal is simple: reliable products, fair pricing, and service you can count on.</p>
+        <div class="feature_row">
+            <div class="feature_item">Factory-direct pricing</div>
+            <div class="feature_item">Wholesale and bulk supply</div>
+            <div class="feature_item">Custom sizes available</div>
+            <div class="feature_item">Delivery options available</div>
+            <div class="feature_item">Rates negotiable based on volume and needs</div>
+        </div>
+    </div>
+    <div id="contact">
+        <h1>Contact</h1>
+        <table>
+            <tr>
+                <td>
+                    <div id="inner_div">
+                        <table id="inner_table">
+                            <tr>
+                                <td><i class="fas fa-building"></i> &nbsp; Bundle Buddy Packaging</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-phone"></i> &nbsp; (516)-205-8301</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-at"></i> &nbsp; sue@bundlebuddypackaging.com</td>
+                            </tr>
+                            <tr>
+                                <td><i class="fas fa-map-marker-alt"></i>
+                                <div id="address">
+                                    Houston, Texas area
+                                </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+                <td>
+                    <!-- Backend form handling is not implemented yet. -->
+                    <form>
+                        <input type="text" placeholder="Name" required>
+                        <input type="text" placeholder="Company" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="text" placeholder="Phone">
+                        <textarea placeholder="Product interested in / message" required rows="5"></textarea>
+                        <button class="btn_one" type="submit">Send Quote Request</button>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="footer">
+        &copy; 2026 Bundle Buddy Packaging. Wholesale packaging supplies you can count on.
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>
